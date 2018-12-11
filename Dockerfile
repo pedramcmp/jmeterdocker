@@ -16,8 +16,8 @@ RUN chmod +x /run.sh
 
 ENV PATH $PATH:/opt/jmeter/apache-jmeter-5.0/bin
 
-ENV JPROT https
-ENV JIP staging.marketing.manycomponents.com
-ENV JPORT 443
+ENV JPROT http
+ENV JIP localhost
+ENV JPORT 80
 
 CMD [ "/run.sh" ]
