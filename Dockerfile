@@ -19,5 +19,7 @@ ENV PATH $PATH:/opt/jmeter/apache-jmeter-5.1/bin
 ENV JPROT http
 ENV JIP localhost
 ENV JPORT 80
+ENV JUSERNAME test-manager
+ENV JPASSWORD pass-1
 
 CMD [ "/run.sh" ]
