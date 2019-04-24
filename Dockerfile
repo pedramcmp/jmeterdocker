@@ -8,8 +8,8 @@ RUN apt-get install -y wget awscli --no-install-recommends
 RUN mkdir -p /opt/jmeter
 WORKDIR /opt/jmeter
 
-COPY dependencies/apache-jmeter-5.1.tgz apache-jmeter-5.1.tgz
-RUN tar xvf apache-jmeter-5.1.tgz 
+RUN wget http://apache.uvigo.es//jmeter/binaries/apache-jmeter-5.1.tgz && \
+    tar xvf apache-jmeter-5.1.tgz 
 
 COPY dependencies/mysql-connector-java_8.0.15-1debian9_all.deb mysql-connector-java_8.0.15-1debian9_all.deb
 RUN dpkg -i mysql-connector-java_8.0.15-1debian9_all.deb
