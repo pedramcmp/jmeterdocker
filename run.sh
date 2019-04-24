@@ -1,6 +1,6 @@
 #!/bin/bash
 
-jmeter -n -t /testplan.jmx -l /results.log ${PARAMS}
+jmeter -n -t /tests/testplan.jmx -l /results.log ${PARAMS}
 
 cat /results.log
 RESULT=$(grep -c false /results.log)
