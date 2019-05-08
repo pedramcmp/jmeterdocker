@@ -25,5 +25,6 @@ COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
 ENV PATH $PATH:/opt/jmeter/apache-jmeter-5.1/bin
+ENV JMX_FILE /tests/testplan.jmx
 
 CMD [ "/run.sh" ]
